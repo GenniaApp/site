@@ -399,7 +399,7 @@ svg {
 .ui.header,
 .ui.input input,
 .ui.menu,
-body,
+body:not(.font-content),
 h1,
 h2,
 h3,
