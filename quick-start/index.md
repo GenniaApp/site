@@ -5,7 +5,7 @@
 连接你好友的内网 IP，或加入一台公开的 [GenniaServer](/server)
 ## 配置游戏参数
 ### 游戏速度 (Game Speed)
-取值：$0.5, 0.75, 1, 2, 3, 4$
+取值：$0.25, 0.5, 0.75, 1, 2, 3, 4$
 
 一个游戏刻 = $500ms \times val^{-1}$
 
@@ -41,13 +41,13 @@ $$val_m=\lfloor \frac{1}{4}\times size \times \frac{mountain}{mountain+city}\rfl
 
 City 计算公式：
 
-$$val_c=\lfloor \frac{1}{6}\times size \times \frac{mountain}{mountain+city}\rfloor$$
+$$val_c=\lfloor \frac{1}{6}\times size \times \frac{city}{mountain+city}\rfloor$$
 
 **特别地**，当 $mountain+city=0$ 时，$val_m=val_c=0$
 
 Swamp 计算公式：
 
-$$val=\lfloor \frac{1}{3}(size-val_m-val_c)\times swamp\rfloor$$
+$$val_s=\lfloor \frac{1}{3}(size-val_m-val_c)\times swamp\rfloor$$
 
 **其中** $size=val_w\times val_h$
 
