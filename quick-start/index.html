@@ -74,6 +74,19 @@
 	<script src="/assets/js/sweetalert2.min.js"></script>
 	<script src="/assets/js/marked.min.js"></script>
 	<script src="/assets/js/katex.min.js"></script>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			showProcessingMessages: false,
+			tex2jax: {
+				inlineMath: [["$", "$"], ["\\\\(", "\\\\)"]],
+				processEscapes:true
+			},
+			menuSettings: {
+				zoom: "Hover"
+			}
+		});
+	</script>
+	<script async src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML"></script>
 	<link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png">
 </head>
 
