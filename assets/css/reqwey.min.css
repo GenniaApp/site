@@ -490,7 +490,6 @@ img {
 :not(pre)>code {
 	padding: 2px 4px;
 	border-radius: .3rem;
-	font-size: .9rem;
 	color: #745fb5;
 	background-color: #f4f2f9;
 	margin: 0 2px
